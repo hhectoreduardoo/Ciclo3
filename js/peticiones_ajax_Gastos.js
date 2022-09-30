@@ -38,7 +38,7 @@ function limpiar_formulario(){
 //Funcion (GET) consultar o traer toda la informacion o registro de la tabla gastos
 function consultar_todo(){
     $.ajax({
-        url:"https://PONGA SU RESPECTIVA URL DE LA PLANTILLA REST DE ORACLE",
+        url:"https://gecd5699f328f80-mybdreto1.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/cabin/cabin",
         type:"GET",
         datatype:"json",
 		
@@ -128,7 +128,7 @@ function consultaID(id){
 	else{
 
 		$.ajax({
-			url: 'https://PONGA SU RESPECTIVA URL DE LA PLANTILLA REST DE ORACLE'+ id.val(),
+			url: 'https://gecd5699f328f80-mybdreto1.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/cabin/cabin'+ id.val(),
 			
 			type: 'GET',
 			dataType: 'json',
@@ -186,7 +186,7 @@ function guardarInformacion(){
 	}	
 	
     $.ajax({
-        url: 'https://PONGA SU RESPECTIVA URL DE LA PLANTILLA REST DE ORACLE',
+        url: 'https://gecd5699f328f80-mybdreto1.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/cabin/cabin',
 		
 		data:{
 			nombre: $("#name").val(),
@@ -247,7 +247,7 @@ function editar_Informacion(){
 	if (confirm("Está seguro de eliminar el registro:  " + $("#codigo").val() + "  ??")){
 		
 		$.ajax({
-			url:"https://PONGA SU RESPECTIVA URL DE LA PLANTILLA REST DE ORACLE",
+			url:"https://gecd5699f328f80-mybdreto1.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/cabin/cabin",
 			type:"PUT",
 			data:dataToSend,
 			contentType:"application/JSON",
@@ -278,7 +278,7 @@ function borrar_registro(idElemento){
 	if (confirm("Está seguro de eliminar el registro:  " + idElemento + "  ??")){
 	
 		$.ajax({
-			url:"https://PONGA SU RESPECTIVA URL DE LA PLANTILLA REST DE ORACLE",
+			url:"https://gecd5699f328f80-mybdreto1.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/cabin/cabin",
 			type:"DELETE",
 			data:dataToSend,
 			contentType:"application/JSON",
